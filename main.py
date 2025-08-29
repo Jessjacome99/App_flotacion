@@ -40,7 +40,7 @@ with st.sidebar:
         min_value=62.05,
         max_value=68.01,
         value=65, # Valor inicial
-        step=0.1
+        step=0.001
     )
     st.caption("Representa la fracción del mineral que ha sido recuperada en la espuma (froth) después de la separación")
 
@@ -51,7 +51,7 @@ with st.sidebar:
         min_value=175.84734,
         max_value=372.44264,
         value=200,
-        step=0.1
+        step=0.001
     )
     st.caption("Cantidad de aire que se inyecta a través del sistema de dispersión en la columna")
 
@@ -61,7 +61,7 @@ with st.sidebar:
         min_value=241.70237,
         max_value=739.304,
         value=350,
-        step=0.1
+        step=0.001
     )
     st.caption("Representa la dosificación de reactivo colector del tipo amina que se alimenta a la columna")
 
