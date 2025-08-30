@@ -1,4 +1,3 @@
-
 import joblib
 import streamlit as st
 import pandas as pd
@@ -43,7 +42,7 @@ with st.sidebar:
         step=1
     )
     st.caption("Representa la fracción del mineral que ha sido recuperada en la espuma (froth) después de la separación")
-
+    st.write("DEBUG iron:", iron, type(iron))
 
     # Slider para el Flujo de aire
     air = st.slider(
@@ -54,6 +53,8 @@ with st.sidebar:
         step=1
     )
     st.caption("Cantidad de aire que se inyecta a través del sistema de dispersión en la columna")
+    st.write("DEBUG air:", air, type(air))
+
 
     # Slider para el Flujo de Amina
     amina = st.slider(
@@ -64,7 +65,7 @@ with st.sidebar:
         step=1
     )
     st.caption("Representa la dosificación de reactivo colector del tipo amina que se alimenta a la columna")
-
+    st.write("DEBUG amina:", amina, type(amina))
 # --- Contenido de la Página Principal ---
 st.title("📊🧪🫧 Predictor de Concentrado de Sílice (%) en un proceso de Flotación")
 st.markdown("""
