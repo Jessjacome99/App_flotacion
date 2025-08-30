@@ -37,10 +37,10 @@ with st.sidebar:
     # Slider para el Concentrado de hierro
     iron = st.slider(
         label=' ⛏️🪨Concentrado de hierro (%)',
-        min_value=62.05,
-        max_value=68.01,
+        min_value=62,
+        max_value=68,
         value=65, # Valor inicial
-        step=0.001
+        step=1
     )
     st.caption("Representa la fracción del mineral que ha sido recuperada en la espuma (froth) después de la separación")
 
@@ -48,20 +48,20 @@ with st.sidebar:
     # Slider para el Flujo de aire
     air = st.slider(
         label='🌬️🫧🌀Flujo de aire - Columna de flotación 01',
-        min_value=175.84734,
-        max_value=372.44264,
+        min_value=175,
+        max_value=372,
         value=200,
-        step=0.001
+        step=1
     )
     st.caption("Cantidad de aire que se inyecta a través del sistema de dispersión en la columna")
 
     # Slider para el Flujo de Amina
     amina = st.slider(
         label='🧪💧⚙️Flujo de Amina',
-        min_value=241.70237,
-        max_value=739.304,
+        min_value=241,
+        max_value=739,
         value=350,
-        step=0.001
+        step=1
     )
     st.caption("Representa la dosificación de reactivo colector del tipo amina que se alimenta a la columna")
 
