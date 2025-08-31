@@ -39,10 +39,10 @@ with st.sidebar:
         min_value=62,
         max_value=68,
         value=65, # Valor inicial
-        step=1
+        step=1,
     )
     st.caption("Representa la fracción del mineral que ha sido recuperada en la espuma (froth) después de la separación")
-    st.write("DEBUG iron:", iron, type(iron))
+    #st.write("DEBUG iron:", iron, type(iron))
 
     # Slider para el Flujo de aire
     air = st.slider(
@@ -50,10 +50,10 @@ with st.sidebar:
         min_value=175,
         max_value=372,
         value=200,
-        step=1
+        step=1,
     )
     st.caption("Cantidad de aire que se inyecta a través del sistema de dispersión en la columna")
-    st.write("DEBUG air:", air, type(air))
+    #st.write("DEBUG air:", air, type(air))
 
 
     # Slider para el Flujo de Amina
@@ -62,10 +62,10 @@ with st.sidebar:
         min_value=241,
         max_value=739,
         value=350,
-        step=1
+        step=1,
     )
     st.caption("Representa la dosificación de reactivo colector del tipo amina que se alimenta a la columna")
-    st.write("DEBUG amina:", amina, type(amina))
+    #st.write("DEBUG amina:", amina, type(amina))
 # --- Contenido de la Página Principal ---
 st.title("📊🧪🫧 Predictor de Concentrado de Sílice (%) en un proceso de Flotación")
 st.markdown("""
